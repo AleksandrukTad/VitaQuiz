@@ -1,0 +1,894 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 8
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_TemporalCoherenceThreshold: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 9
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVRFiltering: 0
+    m_PVRFilteringMode: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousColorSigma: 1
+    m_PVRFilteringAtrousNormalSigma: 1
+    m_PVRFilteringAtrousPositionSigma: 1
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &70827890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 70827893}
+  - component: {fileID: 70827892}
+  - component: {fileID: 70827891}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &70827891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 70827890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &70827892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 70827890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 5
+--- !u!4 &70827893
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 70827890}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &482687798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 482687804}
+  - component: {fileID: 482687803}
+  - component: {fileID: 482687802}
+  - component: {fileID: 482687801}
+  - component: {fileID: 482687800}
+  - component: {fileID: 482687799}
+  m_Layer: 0
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &482687799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 482687798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: ab2239d77478fd14f8671a2a1c90f226, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &482687800
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 482687798}
+--- !u!114 &482687801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 482687798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &482687802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 482687798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &482687803
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 482687798}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &482687804
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 482687798}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 2122321540}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!1 &982627282
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 982627284}
+  - component: {fileID: 982627283}
+  m_Layer: 0
+  m_Name: LearningManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &982627283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 982627282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb65423565b70b4a82725ae51914eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  learningList:
+  - name: Biotyna
+    image: BIOTYNAimg.png
+    description: "Jest to zwi\u0105zek heterocykliczny zawieraj\u0105cy pier\u015Bcie\u0144
+      tiofenowy i imidazolowy oraz 5 C \u0142a\u0144cuch boczny zako\u0144czony grup\u0105
+      karboksylow\u0105.  Zwi\u0105zek ten jest grup\u0105 prostetyczn\u0105 karboksylaz
+      zale\u017Cnych od ATP (np. karboksylazy pirogronianowej)  W reakcjach karboksylacji
+      biotyna bierze udzia\u0142 w przenoszeniu grupy karboksylowej Niedob\xF3r biotyny:
+      nie obserwuje si\u0119 zbyt cz\u0119sto, jednak gdy tak si\u0119 zdarza symptomem
+      s\u0105 \u0142uszczenie si\u0119 sk\xF3ry, \u0142ojotokowe zapalenie sk\xF3ry
+      g\u0142owy i wypadanie w\u0142os\xF3w Nadmiar biotyny: nie obserwuje si\u0119."
+  - name: Fosforan Pirydoksalu
+    image: FOSFORAN-PIRYDOKSALUimg.png
+    description: "Jest to aktywna forma witaminy B6. Przeno\u015Bnik grup aminowych
+      uczestnicz\u0105cych w reakcjach transaminacji (przenoszenie grup aminowych
+      z aminokwasy na alfa \u2013 ketokwas).  Bierze udzia\u0142 w reakcjach dekarboksylacji
+      aminokwas\xF3w.  Podczas transaminacji jest przekszta\u0142cany w fosforan pirydoksaminy."
+  - name: Kobalamina
+    image: KOBALAMINAimg.png
+    description: "Posiada najbardziej z\u0142o\u017Con\u0105 budow\u0119 chemiczn\u0105
+      ze wszystkich. Jest zaliczana do porfiryn, ale jej struktura r\xF3\u017Cni si\u0119
+      od hemu czy chlorofilu (mnogo\u015B\u0107 i r\xF3\u017Cnorodno\u015B\u0107 podstawnik\xF3w)
+      Uczestniczy w metylacji homocysteiny, z odtworzeniem metioniny oraz w metabolizmie
+      \ propionylo~S \u2013 CoA Niedob\xF3r kobalaminy: prowadzi do niedokrwisto\u015Bci,
+      licznych objaw\xF3w neurologicznych spowodowanych uszkodzeniem os\u0142onek
+      mielinowych nerw\xF3w obwodowych i rdzenia kr\u0119gowego  Nadmiar kobalaminy:
+      nie mo\u017Cna jej przedawkowa\u0107 "
+  - name: Koenzym A
+    image: KOENZYM-Aimg.png
+    description: "Zbudowany z 3 element\xF3w sk\u0142adowych: ADP (adenozynodifosforan),
+      kwas pantotenowy (wit. B5), cysteamina. Jest przeno\u015Bnikiem grup acylowych
+      (wi\u0105\u017C\u0105 si\u0119 do niego przez grup\u0119 tiolow\u0105 \u2013SH)
+      \uF0E0acyloCoA (najwa\u017Cniejszy jest acetyloCoA). Aktywuje kwasy t\u0142uszczowe
+      oraz uczestniczy w oksydacji dek. 2 \u2013 oksokwas\xF3w."
+  - name: Koenzym Q10
+    image: UBICHINONimg.png
+    description: "Zwi\u0105zek zawieraj\u0105cy pier\u015Bcie\u0144 chinonowy po\u0142\u0105czony
+      z d\u0142ugim \u0142a\u0144cuchem izoprenoidowym. W sk\u0142ad \u0142a\u0144cucha
+      wchodzi od 6 do 10 jednostek izoprenowych. W\u0142a\u015Bciwym przeno\u015Bnikiem
+      pary proton\xF3w i elektron\xF3w jest pier\u015Bcie\u0144 chinonowy. Drugi hydrofobowy
+      \u0142a\u0144cuch izoprenoidowy umo\u017Cliwia zakotwiczenie koenzymu Q w lipidowych
+      sk\u0142adnikach wewn\u0119trznej b\u0142ony mitochondrialnej. Koenzym Q mo\u017Ce
+      przejmowa\u0107 atomy wodoru zar\xF3wno z FMNH2 jak i z FADH2. Przy\u0142\u0105czenie
+      pary atom\xF3w wodoru sprawia, i\u017C ubichinon przechodzi w ubihydrochinon."
+  - name: Kwas Foliowy
+    image: KWAS-FOLIOWYimg.png
+    description: "Sk\u0142ada si\u0119 z pterydyny, kwasu para-aminobenzoesowego i
+      reszt glutaminianu. Przenosi fragmenty jednow\u0119glowe zwi\u0105zane z atomem
+      azotu (gr. metylowe, hydroksymetylowe, formylowe, formiminowe) Niedob\xF3r kwasu
+      foliowego: najcz\u0119\u015Bciej w przebiegu ci\u0105\u017Cy prowadz\u0105c
+      do rozwoju niedokrwisto\u015Bci, upo\u015Bledzenie biosyntezy puryn i pirymidyn,
+      a w konsekwencji do zmniejszenia biosyntezy kwas\xF3w nukleinowych \u2013 dochodzi
+      do spowolniania podzia\u0142\xF3w kom\xF3rek;  Nadmiar kwasu foliowego: nadmiar
+      kwasu foliowego nie jest toksyczny."
+  - name: Kwas Liponowy
+    image: LIPONIANimg.png
+    description: "Jest to o\u015Bmiow\u0119glowy kwas karboksylowy. Posiada da atomy
+      siarki, przy w\u0119glu sz\xF3stym i \xF3smym. Mo\u017Ce wsyt\u0119powa\u0107
+      w formie zredukowanej (digydroliponian) lub utlenionej (liponian). Liponian
+      jest przej\u015Bciowym akceptorem grup acylowych w procesie oksydacyjnej dekarboksylacji
+      alfa-ketokwas\xF3w."
+  - name: Kwas Pangamowy
+    image: KWAS-PANGAMOWYimg.png
+    description: "Jest pochodn\u0105 kwasu glukonowego Stymuluje odpowied\u017A immunologiczn\u0105,
+      nasila utlenianie glukozy i lipid\xF3w, obni\u017Ca st\u0119\u017Cenie cholesterolu
+      we krwi, rozszerza naczynia krwiono\u015Bne, przyspiesza katabolizm kwasu mlekowego,
+      zwi\u0119ksza produkcj\u0119 \u017C\xF3\u0142ci i detoksykacj\u0119 Niedob\xF3r
+      kwasu pangamowego: brak lub niedob\xF3r witaminy B15 prowadz\u0105 do przewlek\u0142ych
+      chor\xF3b w\u0142os\xF3w i sk\xF3ry oraz oty\u0142o\u015Bci Nadmiar kwasu pangamowego:
+      na pocz\u0105tku suplementacji mog\u0105 pojawi\u0107 si\u0119 nudno\u015Bci."
+  - name: Kwas Pantotenowy
+    image: KWAS-PANTOTENOWYimg.png
+    description: "Sk\u0142ada si\u0119 z beta-alaniny i kwasu pantoinowego. Kwas pantotenowy
+      jest niezb\u0119dny do biosyntezy koenzymu A i fosfopanteteiny (sk\u0142adniki
+      syntezy kwas\xF3w t\u0142uszczowych). Uczestniczy w syntezie witaminy D, cholesterolu,
+      kwas\xF3w t\u0142uszczowych, erytrocyt\xF3w, niekt\xF3rych hormon\xF3w i przeka\u017Anik\xF3w
+      nerwowych. Niedob\xF3r kwasu pantotenowego: praktycznie nie wyst\u0119puje.
+      Nadmiar kwasu pantotenowego: przedawkowanie witaminy B5 nie zagra\u017Ca \u017Cyciu,
+      gdy\u017C jej nadmiar jest wydalany z organizmu z moczem, ale jednorazowe przyj\u0119cie
+      du\u017Cej dawki witaminy B5 powoduje biegunki. "
+  - name: Niacyna
+    image: NIACYNAimg.png
+    description: "Wsp\xF3lna nazwa na okre\u015Blenie dw\xF3ch zwi\u0105zk\xF3w: kwasu
+      nikotynowego i jego amidu, kt\xF3re s\u0105 witamin\u0105. Niacyna jest prekursorem
+      dw\xF3ch koenzym\xF3w: NAD i NADP.  Zwi\u0105zek ten nie jest typow\u0105 witamin\u0105,
+      bo mo\u017Ce powstawa\u0107 w organizmie r\xF3wnie\u017C jako metabolit tryptofanu.
+      Niedobory niacyny: wywo\u0142uje pelagr\u0119 (objawy choroby obejmuj\u0105:
+      zapalenie sk\xF3ry, biegunk\u0119, os\u0142abienie, ot\u0119pienie, agresj\u0119,
+      bezsenno\u015B\u0107), uczucie znu\u017Cenia, brak \u0142aknienia, zaburzenia
+      procesu trawienia i motoryki jelit oraz zmiany zapalne w obr\u0119bie jamy ustnej.
+      Nadmiar niacyny: nadmiar niacyny wydalany jest z moczem, dlatego trudno j\u0105
+      przedawkowa\u0107, mo\u017Ce spowodowa\u0107 b\xF3le g\u0142owy, rozszerzenie
+      naczy\u0144 krwiono\u015Bnych, zaczerwienienie sk\xF3ry oraz uczucie niestrawno\u015Bci. "
+  - name: Pirofosforan Tiaminy
+    image: PIROFOSFORAN-TIAMINYimg.png
+    description: "Jest pochodn\u0105 wit. B1, jej biologicznie czynn\u0105 form\u0105.
+      Uczestniczy w procesie oksydacyjnej dekarboksylacji alfa \u2013 ketokwas\xF3w
+      (pirogronianu, alfaketoglutaranu) oraz w cyklu pentozowo \u2013 fosforanowym.
+      \ R\xF3wnie\u017C wi\u0105\u017Ce alfa - ketokwas poprzez swoj\u0105 grup\u0119
+      karbonylow\u0105.  Pe\u0142ni funkcj\u0119 koenzymu kilku enzym\xF3w zwi\u0105zanych
+      z metabolizmem cukrowym.  Niedob\xF3r: upo\u015Bledza funkcj\u0119 tych biologiczne
+      czynnych bia\u0142ek, uszkodzenie tkanki nerwowej (zaburzenia w syntezie acetylocholiny)."
+  - name: Pirydoksyna
+    image: PIRYDOKSYNAimg.png
+    description: "Jest to og\xF3lna nazwa dla prekursor\xF3w koenzymu \u2013 FOSFORANU
+      PIRYDOKSALU (PLP) \u2013 obejmuje pirydoksyn\u0119, pirydoksal, pirydoksamin\u0119.
+      PLP jest grup\u0105 prostetyczn\u0105 aminotransferaz. Uczestniczy te\u017C
+      w innych reakcjach zwi\u0105zanych z metabolizowaniem aminokwas\xF3w i porfiryn
+      . Niedob\xF3r pirydoksyny: objawy neurologiczne, zmiany zapalne sk\xF3ry, zapalenie
+      b\u0142ony \u015Bluzowej j\u0119zyka, niedokrwisto\u015B\u0107 spowodowana upo\u015Bledzeniem
+      biosyntezy hemu. Nadmiar pirydoksyny: hiperwitaminoza tej witaminy mo\u017Ce
+      negatywnie wp\u0142yn\u0105\u0107 na uk\u0142ad nerwowy, powoduj\u0105c: zwyrodnienia
+      tkanki nerwowej, s\u0142abo\u015B\u0107 mi\u0119\u015Bni, niepewny ch\xF3d,
+      uczucie mrowienia. "
+  - name: Ryboflawina
+    image: RYBOFLAWINAimg.png
+    description: "Zawiera pier\u015Bcie\u0144 dimetyloizoalloksanzyny, kt\xF3ry kowalencyjnie
+      wi\u0105\u017Ce rybitol. Ryboflawina spe\u0142nia tylko jedn\u0105 funkcj\u0119
+      biologiczn\u0105: jest substratem dla syntezy FMN i FAD. Niedob\xF3r ryboflawiny:
+      wyst\u0119puj\u0105 przede wszystkim u alkoholik\xF3w, s\u0105 to stany zapalne
+      jamy ustnej, gard\u0142a, k\u0105cik\xF3w ust oraz zmiany \u0142ojotokowe sk\xF3ry.
+      Nadmiar ryboflawiny: op\xF3\u017Anienie wzrostu i upo\u015Bledzenie ga\u0142ek
+      ocznych i rog\xF3wki, wyst\u0119puje te\u017C uczucie piasku pod powiekami i
+      pogorszenie widzenia, w przypadku przedawkowani mog\u0105 wyst\u0105pi\u0107
+      nudno\u015Bci i wymioty. "
+  - name: S-adenozylometionina
+    image: S-ADENOZYLOMETIONINAimg.png
+    description: "W  jego sk\u0142ad wchodzi metionina.  Jest przeno\u015Bnikiem grupy
+      metylowej na r\xF3\u017Cne akceptory. Po od\u0142\u0105czeniu \u2013CH3 staje
+      si\u0119 adenozylohomocystein\u0105 \u2013 gotow\u0105 do przy\u0142\u0105czenia
+      grupy metylowej i odtworzenia cz\u0105steczki SAM."
+  - name: Tetrahydrofolian
+    image: TETRAHYDROFOLIANimg.png
+    description: "Jest to pochodna kwasu foliowego.  Pe\u0142ni funkcj\u0119 przeno\u015Bnika
+      fragment\xF3w jednow\u0119glowych, uczestniczy w metabolizmie aminokwas\xF3w,
+      syntezie puryn, w przenoszeniu grup metylowych oraz jako reduktor w procesie
+      hydroksylacji."
+  - name: Tiamina
+    image: TIAMINAimg.png
+    description: "Sk\u0142ada si\u0119 z dw\xF3ch cz\u0119\u015Bci: pirymidynowej
+      i tiazolowej; zespolone s\u0105 mostkiem metylowym. Tiamina po fosforylacji
+      staje si\u0119 PIROFOSFORANEM TIAMINY \u2013 TPP (wi\u0105\u017Ce alfa - ketokwasy
+      w procesie dekarboksylacji oksydacyjnej w mitochondriach i przenoszeniu aldehyd\xF3w).
+      TPP w cytozolu uczestniczy w szlaku pentozofosforowym. Niedob\xF3r tiaminy:
+      \ skurcze i b\xF3le mi\u0119\u015Bni, zapalenie nerw\xF3w, niedow\u0142ad, zaburzenie
+      trawienia. Nadmiar tiaminy: zawroty g\u0142owy, os\u0142abienie i zm\u0119czenie,
+      dr\u017Cenie mi\u0119\u015Bni, zaburzenia rytmu pracy serca."
+  - name: ATP GTP UTP CTP
+    image: ATP-GTP-UTP-CTPimg.png
+    description: "Zawieraj\u0105 bogatoenergetyczne wi\u0105zania bezwodnikowe pomi\u0119dzy
+      resztami kwasu ortofosforowego.  Wsp\xF3lnym elementem budowy wymienionych zwi\u0105zk\xF3w
+      jest ryboza po\u0142\u0105czona wysokoenergetycznymi wi\u0105zaniami z resztami
+      fosforanowymi. Z kolei r\xF3\u017Cni\u0105 si\u0119 zasadami azotowymi. ATP
+      i GTP s\u0105 przeno\u015Bnikami energii w r\xF3\u017Cnych procesach, g\u0142\xF3wnie
+      w reakcjach syntezy i aktywacji substrat\xF3w w\u0142\u0105czanych do szlak\xF3w
+      katabolicznych.  UTP jest aktywatorem cukr\xF3w prostych w procesie syntezy
+      polisacharyd\xF3w. CTP aktywuje aminoalkohole w proc. syntezie fosfolipid\xF3w. "
+  - name: FAD FMN
+    image: FAD-FMNimg.png
+    description: "Oksydoreduktazy. FMN jest zbudowany z dimetyizoalloksazyny i  rybitolu,
+      a FAD ma dodatkowo ryboz\u0119 i adenin\u0119. Ich zadaniem jest przenoszenie
+      e- na \u0142a\u0144cuch oddechowy, s\u0105 tak\u017Ce akceptorami pary wodoru.
+      S\u0105 pochodnymi ryboflawiny.  W odr\xF3\u017Cnieniu od NAD i NADP s\u0105
+      stale zwi\u0105zane z bia\u0142kami enzymatycznymi, po\u0142\u0105czenie to
+      nazywamy flawoproteinami."
+  - name: NAD+ NADP+
+    image: NAD+-NADP+img.png
+    description: "Oksydoreduktazy. NAD zbudowany jest z nukleozydu adeninowego oraz
+      z nukleotydu w sk\u0142ad kt\xF3rego wchodzi, opr\xF3cz reszty  kwasu ortofosforowego
+      (V) i rybozy, amid kwasu nikotynowego (wit. PP); w NADP dodatkowo wyst\u0119puje
+      reszta fosforanowa przy w\u0119glu 2\u2019 rybozy nukleotydu adeninowego. Oba
+      przenosz\u0105 wod\xF3r, s\u0105 akceptorami proton\xF3w i elektron\xF3w w procesie
+      dehydrogenazy, cz\u0105steczka NAD wi\u0105\u017Ce 1 proton i 2 e-. Ich budowa
+      odpowiada dw\xF3m nukleotydom zespolonym wi\u0105zaniem pirofosforanowym."
+  name: {fileID: 1964518587}
+  image: {fileID: 1624229149}
+  description: {fileID: 1345664392}
+--- !u!4 &982627284
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 982627282}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 274.7034, y: 813.207, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1345664390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1345664391}
+  - component: {fileID: 1345664393}
+  - component: {fileID: 1345664392}
+  m_Layer: 0
+  m_Name: Description
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1345664391
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1345664390}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2122321540}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000012398, y: -353.23}
+  m_SizeDelta: {x: 800, y: 573.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1345664392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1345664390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 30
+    m_MaxSize: 60
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Text
+--- !u!222 &1345664393
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1345664390}
+--- !u!1 &1624229147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1624229148}
+  - component: {fileID: 1624229150}
+  - component: {fileID: 1624229149}
+  m_Layer: 0
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1624229148
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1624229147}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2122321540}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.3, y: 210.9}
+  m_SizeDelta: {x: 598.8, y: 492.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1624229149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1624229147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1624229150
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1624229147}
+--- !u!1 &1964518585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1964518586}
+  - component: {fileID: 1964518588}
+  - component: {fileID: 1964518587}
+  m_Layer: 0
+  m_Name: Name
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1964518586
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1964518585}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2122321540}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.29996, y: 532.3}
+  m_SizeDelta: {x: 598.8, y: 56.2}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1964518587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1964518585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 45
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 4
+    m_MaxSize: 45
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &1964518588
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1964518585}
+--- !u!1 &1981073470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1981073475}
+  - component: {fileID: 1981073474}
+  - component: {fileID: 1981073473}
+  - component: {fileID: 1981073472}
+  - component: {fileID: 1981073471}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1981073471
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1981073470}
+  m_Enabled: 1
+--- !u!124 &1981073472
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1981073470}
+  m_Enabled: 1
+--- !u!92 &1981073473
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1981073470}
+  m_Enabled: 1
+--- !u!20 &1981073474
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1981073470}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+  m_StereoMirrorMode: 0
+--- !u!4 &1981073475
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1981073470}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2122321539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2122321540}
+  - component: {fileID: 2122321542}
+  - component: {fileID: 2122321541}
+  m_Layer: 0
+  m_Name: LearningModel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2122321540
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2122321539}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1624229148}
+  - {fileID: 1964518586}
+  - {fileID: 1345664391}
+  m_Father: {fileID: 482687804}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2122321541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2122321539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &2122321542
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2122321539}
